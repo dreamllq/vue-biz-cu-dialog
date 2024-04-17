@@ -1,7 +1,7 @@
 {
   "name": "lc-vue-biz-cu-dialog",
   "description": "新增/创建弹窗",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "main": "./dist/index.umd.cjs",
   "module": "./dist/index.js",
