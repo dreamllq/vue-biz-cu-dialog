@@ -28,9 +28,16 @@ let sourceCode = '';
 let com;
 
 onMounted(async () => {
-  const p = `../../examples/${props.c}.vue?raw`;
+  let p, cp;
+  if (import.meta.env.DEV) {
+    p = `../../examples/${props.c}.vue?raw`;
+    cp = `../../examples/${props.c}.vue`;
+  } else {
+    p = `../../../../examples/${props.c}.vue?raw`;
+    cp = `../../../../examples/${props.c}.vue`;
+  }
+
   sourceCode = (await import(/* @vite-ignore */ p)).default;
-  const cp = `../../examples/${props.c}.vue`;
   com = (await import(/* @vite-ignore */ cp)).default;
   ready.value = true;
   await nextTick();

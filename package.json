@@ -13,7 +13,8 @@
   },
   "files": [
     "/dist",
-    "/docs/.vitepress/dist"
+    "/docs/.vitepress/dist",
+    "/docs/.vitepress/examples"
   ],
   "types": "dist/index.d.ts",
   "scripts": {
@@ -78,7 +79,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/dreamllq/vue-biz-cu-dialog"
   },
   "keywords": [
     "vue",
