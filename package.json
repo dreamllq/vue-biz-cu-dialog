@@ -14,7 +14,7 @@
   "files": [
     "/dist",
     "/docs/.vitepress/dist",
-    "/docs/.vitepress/examples"
+    "/docs/examples"
   ],
   "types": "dist/index.d.ts",
   "scripts": {
